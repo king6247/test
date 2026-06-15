@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Minecraft Shop</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #1e1e1e;
+            color: white;
+            text-align: center;
+        }
+
+        .box {
+            background: #2d2d2d;
+            margin: 20px auto;
+            padding: 15px;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: limegreen;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🎮 Minecraft Rank Shop</h1>
+<p>بهترین رنک ها رو انتخاب کن</p>
+
+<div class="box">
+    <h2>VIP Rank</h2>
+    <p>قیمت: 50 هزار تومان</p>
+    <button onclick="buy('VIP')">خرید</button>
+</div>
+
+<div class="box">
+    <h2>VIP+</h2>
+    <p>قیمت: 100 هزار تومان</p>
+    <button onclick="buy('VIP+')">خرید</button>
+</div>
+
+<div class="box">
+    <h2>MVP</h2>
+    <p>قیمت: 200 هزار تومان</p>
+    <button onclick="buy('MVP')">خرید</button>
+</div>
+
+<script>
+function buy(rank) {
+    alert("شما رنک " + rank + " را انتخاب کردی!");
+}
+</script>
+
+</body>
+</html>
